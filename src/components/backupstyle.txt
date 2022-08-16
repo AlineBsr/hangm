@@ -1,0 +1,15 @@
+document.body.addEventListener("onKeyDown", (e) => {
+    handleLetter(e);
+  
+  })
+document.getElementById(`btn${letterGuess}`).style.backgroundColor = "red"; 
+document.getElementById(`btn${letterGuess}`).setAttribute("find", "false")
+document.getElementById(`btn${letterGuess}`).setAttribute("disabled", true)
+
+document.getElementById(`btn${letterGuess}`).style.backgroundColor = "green"; 
+document.getElementById(`btn${letterGuess}`).setAttribute("find", "true")
+document.getElementById(`btn${letterGuess}`).setAttribute("disabled", true)
+
+        word.split("").map( (key, val) => {
+          val === letterGuess ? wordGuessed[key] = letterGuess : wordGuessed[key] = "_"
+        })

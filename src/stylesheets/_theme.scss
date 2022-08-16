@@ -1,0 +1,62 @@
+@import "./_variables";
+.dark {
+
+  background-color: $bgDark;
+  color:$fontDark;
+  //background-color: $bgDark;
+  //color:$fontDark;
+  .hangIm-container{
+    background-color:$bgHangDark;
+    padding: 5rem;
+    filter: invert(100%);
+  }
+
+  #board{
+    //background-color: yellow;
+    //flex-direction: column;
+    width:60%;
+    & button{
+      color:gray;
+      background-color: #222222;
+      &:disabled{
+        background-color: #2a2a2a;
+        color: #3d3d3d;
+      }
+    }
+  }
+
+  footer{
+    color: darkslategrey;
+  }
+}
+
+.light {
+  background-color: $bgLight;
+  color: $fontLight;
+
+  #board{
+    //background-color: yellow;
+    //flex-direction: column;
+    width:60%;
+    & button{
+      color: #222222;
+      background-color: gray;
+      &:disabled{
+        background-color: #626262;
+        color: #626262;
+      }
+    }
+  }
+
+  .hangIm-container {
+    background-color: $bgHangLight;
+    padding: 5rem;
+    filter: invert(100%);
+  }
+
+}
+
+.NavThemeToggleIco {
+  border: 1px solid;
+  width:1.2rem;
+}

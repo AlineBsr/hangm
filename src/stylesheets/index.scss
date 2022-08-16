@@ -1,0 +1,63 @@
+@import './_variables.scss';
+@import './_theme.scss';
+@import './_navbar.scss';
+@import './_game.scss';
+
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $bgDark;
+
+    main{
+         height: 100em;
+    }
+}
+
+a{ text-decoration: none; }
+
+footer{
+    text-align: center;
+    font-size: 12px;
+    padding: 2rem;
+    position: fixed;
+    width: 100%;
+     bottom: 0;
+}
+
+// KEYFRAMES
+@keyframes rotator {
+    0% { transform: rotate(10deg);    }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes colors {
+    0% { stroke: #4285F4; }
+    25% { stroke: #DE3E35; }
+    50% { stroke: #F7C223; }
+    75% { stroke: #1B9A59; }
+    100% { stroke: #4285F4; }
+}
+
+@keyframes dash {
+    0% { stroke-dashoffset: 187; }
+    50% {
+        stroke-dashoffset: 46.75;
+        transform: rotate(135deg);
+    }
+    100% {
+        stroke-dashoffset: 187;
+        transform: rotate(450deg);
+    }
+}
+
+.path {
+    stroke-dasharray: 220;
+    stroke-dashoffset:140;
+    transform-origin: center;
+    animation: dash 4s ease-in-out infinite, colors 2s ease-in-out infinite;
+}
+.spinner {
+  -webkit-animation: rotator 3s linear infinite;
+          animation: rotator 3s linear infinite;
+}

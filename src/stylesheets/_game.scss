@@ -1,0 +1,47 @@
+.game-container{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    //background-color: green;
+}
+
+.hangIm-container {
+    padding: 5rem;
+    display: flex;
+    width: 15%;
+    //border: 2px solid white;
+    //box-shadow: #abaaaa 2px 2px 20px -2px;
+    border-radius: 20px;
+}
+
+.game-cat{
+    letter-spacing: 5px;
+    font-size: 2rem;
+}
+
+.word{
+    display: flex;
+    margin: 10px;
+    padding-right: 5px;
+    font-size: 5rem;
+    justify-content: center;
+}
+
+
+
+
+.letters{
+    text-transform: capitalize;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonLetter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.8rem;
+    //font-weight: bold;
+}

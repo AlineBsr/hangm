@@ -1,0 +1,178 @@
+.dark {
+  background-color: #1c1c25;
+  color: rgb(208, 208, 208);
+}
+.dark .hangIm-container {
+  background-color: #c2baba;
+  padding: 5rem;
+  filter: invert(100%);
+}
+.dark #board {
+  width: 60%;
+}
+.dark #board button {
+  color: gray;
+  background-color: #222222;
+}
+.dark #board button:disabled {
+  background-color: #2a2a2a;
+  color: #3d3d3d;
+}
+.dark footer {
+  color: darkslategrey;
+}
+
+.light {
+  background-color: #92a4a0;
+  color: darkslategrey;
+}
+.light #board {
+  width: 60%;
+}
+.light #board button {
+  color: #222222;
+  background-color: gray;
+}
+.light #board button:disabled {
+  background-color: #626262;
+  color: #626262;
+}
+.light .hangIm-container {
+  background-color: #c1abc2;
+  padding: 5rem;
+  filter: invert(100%);
+}
+
+.NavThemeToggleIco {
+  border: 1px solid;
+  width: 1.2rem;
+}
+
+.HeaderTheme {
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  padding: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.themeIcoNav {
+  font-size: 30px;
+}
+
+.game-container {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+.hangIm-container {
+  padding: 5rem;
+  display: flex;
+  width: 15%;
+  border-radius: 20px;
+}
+
+.game-cat {
+  letter-spacing: 5px;
+  font-size: 2rem;
+}
+
+.word {
+  display: flex;
+  margin: 10px;
+  padding-right: 5px;
+  font-size: 5rem;
+  justify-content: center;
+}
+
+.letters {
+  text-transform: capitalize;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonLetter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.8rem;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #1c1c25;
+}
+body main {
+  height: 100em;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+  padding: 2rem;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+@keyframes rotator {
+  0% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes colors {
+  0% {
+    stroke: #4285F4;
+  }
+  25% {
+    stroke: #DE3E35;
+  }
+  50% {
+    stroke: #F7C223;
+  }
+  75% {
+    stroke: #1B9A59;
+  }
+  100% {
+    stroke: #4285F4;
+  }
+}
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 187;
+  }
+  50% {
+    stroke-dashoffset: 46.75;
+    transform: rotate(135deg);
+  }
+  100% {
+    stroke-dashoffset: 187;
+    transform: rotate(450deg);
+  }
+}
+.path {
+  stroke-dasharray: 220;
+  stroke-dashoffset: 140;
+  transform-origin: center;
+  animation: dash 4s ease-in-out infinite, colors 2s ease-in-out infinite;
+}
+
+.spinner {
+  -webkit-animation: rotator 3s linear infinite;
+  animation: rotator 3s linear infinite;
+}
+
+/*# sourceMappingURL=index.css.map */
